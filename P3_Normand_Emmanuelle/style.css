@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Dalgona';
+    src: url('font/dalgona/Dalgona.eot?#iefix') format('embedded-opentype'),  url('font/dalgona/Dalgona.woff') format('woff'), url('font/dalgona/Dalgona.ttf')  format('truetype'), url('font/dalgona/Dalgona.svg#Dalgona') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'MountainBridgeRegular';
+    src: url('font/mountain/MountainBridgeRegular.eot?#iefix') format('embedded-opentype'),  url('font/mountain/MountainBridgeRegular.otf')  format('opentype'),
+           url('font/mountain/MountainBridgeRegular.woff') format('woff'), url('font/mountain/MountainBridgeRegular.ttf')  format('truetype'), url('font/mountain/MountainBridgeRegular.svg#MountainBridgeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Cookie-Regular';
+    src: url('font/cookie/Cookie-Regular.eot?#iefix') format('embedded-opentype'),  url('font/cookie/Cookie-Regular.woff') format('woff'), url('font/cookie/Cookie-Regular.ttf')  format('truetype'), url('font/cookie/Cookie-Regular.svg#Cookie-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Alleyster';
+    src: url('font/alleyster/Alleyster.eot?#iefix') format('embedded-opentype'),  url('font/alleyster/Alleyster.woff') format('woff'), url('font/alleyster/Alleyster.ttf')  format('truetype'), url('font/alleyster/Alleyster.svg#Alleyster') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
 body
 {
     font-family: arial, georgia;
@@ -8,6 +35,9 @@ body
 ul
 {
 	list-style-type: none;
+}
+a {
+    text-decoration: none;
 }
 header {
     width: 100%;
@@ -29,39 +59,41 @@ header {
 .nav__link_1 {
     background-color: #FCDFDB;
     width: 40%;
-    height: 95%;
+    height: 750px;
     margin-left: 7%;
     box-shadow: grey 0px 0px 20px;
+    font-family: dalgona;
 }
-.nav__link_1 p, i {
-    
-}
+
 .nav__link_2 {
     background-color:#FFF5FE;
     width: 40%;
-    height: 95%;
+    height: 750px;
     margin-left: 5%;
     box-shadow: grey 0px 0px 20px;
+    font-family: Alleyster;
 }
 .nav__link_3 {
     background-color:#F9F9F9;
     width: 40%;
-    height: 95%;
+    height: 750px;
     margin-left: 7%;
     margin-top: 50px;
     box-shadow: grey 0px 0px 20px;
+    font-family: cookie;
 }
 .nav__link_4 {
     background-color:#FDFFFD;
     width: 40%;
-    height: 95%;
+    height: 750px;
     margin-left: 5%;
     margin-top: 50px;
     box-shadow: grey 0px 0px 20px;
+    font-family: MountainBridgeRegular;
 }
 .nav__link_1, .nav__link_2 {
     display: inline-block;
-    flex-direction: row;
+    vertical-align: top;
     margin-top: 5%;
 }
 .nav__link_3, .nav__link_4 {
@@ -73,17 +105,33 @@ header {
 
 button {
     background-color: #579C87;
-    height: 60px;
-    width: 30%;
+    /*height: 60px;
+    width: 30%;*/
     display: block;
     margin: auto;
     margin-bottom: 10%;
+}
+.nav h3{
+    font-family: Arial, Helvetica, sans-serif;
 }
 #fa{
    display: flex;
    justify-content: center;
 }
-
+.nav, h2, h3 {
+    font-size: 1.6em;
+    line-height: 10px;
+}
+.nav h2 {
+    
+    margin-top: 250px;
+}
+.nav i{
+    margin-top: 50px;
+}
+.nav__link_1 h2, h3{
+    margin-top: 100px;
+}
 /*********************/
 /********FOOTER********/
 /*********************/
@@ -143,16 +191,16 @@ titre {
     display: flex;
     justify-content: center;   
 }
-
+.col_menu{
+    display: flex;
+}
 .plats {
-	width: 60%;
+	width: 80%;
 	margin-top: 20px;
     line-height: 45px;
 }
-.prix {
-    float: right; 
+.prix { 
     width: 50px;	
-    margin-left: 75%;
     text-align: right;
     line-height: 45px; 
 }
