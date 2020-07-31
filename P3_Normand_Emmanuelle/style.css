@@ -23,6 +23,12 @@
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'CutiePatootieSkinny';
+    src: url('font/cuti/CutiePatootieSkinny.eot?#iefix') format('embedded-opentype'),  url('font/cuti/CutiePatootieSkinny.woff') format('woff'), url('font/cuti/CutiePatootieSkinny.ttf')  format('truetype'), url('font/cuti/CutiePatootieSkinny.svg#CutiePatootieSkinny') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
   
   
 body
@@ -73,6 +79,18 @@ header {
     box-shadow: grey 0px 0px 20px;
     font-family: Alleyster;
 }
+.nav__link_2 h2 {
+    background: -webkit-linear-gradient(20deg,#d98330 40%, #8f5aff 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
+.nav__link_2 h3 {
+    background: -webkit-linear-gradient(20deg,#d98330 40%, #8f5aff 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
 .nav__link_3 {
     background-color:#F9F9F9;
     width: 40%;
@@ -82,6 +100,18 @@ header {
     box-shadow: grey 0px 0px 20px;
     font-family: cookie;
 }
+.nav__link_3 h3 {
+    background: linear-gradient(20deg,#2549e2 40%, #2495fb 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
+.nav__link_3 h2 {
+    background: linear-gradient(20deg,#2549e2 40%, #2495fb 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
 .nav__link_4 {
     background-color:#FDFFFD;
     width: 40%;
@@ -90,6 +120,18 @@ header {
     margin-top: 50px;
     box-shadow: grey 0px 0px 20px;
     font-family: MountainBridgeRegular;
+}
+.nav__link_4 h3 {
+    background: linear-gradient(90deg,#43973d 40%, #e2fcc3 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
+.nav__link_4 h2 {
+    background: linear-gradient(90deg,#43973d 40%, #e2fcc3 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
 }
 .nav__link_1, .nav__link_2 {
     display: inline-block;
@@ -105,18 +147,20 @@ header {
 
 button {
     background-color: #579C87;
-    /*height: 60px;
-    width: 30%;*/
     display: block;
-    margin: auto;
-    margin-bottom: 10%;
+    /*margin: auto;
+    margin-bottom: 10%;*/
 }
 .nav h3{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: CutiePatootieSkinny;
 }
 #fa{
    display: flex;
    justify-content: center;
+   background: linear-gradient(90deg,#f05461 40%, #f6926b 60%);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
 }
 .nav, h2, h3 {
     font-size: 1.6em;
@@ -131,6 +175,7 @@ button {
 }
 .nav__link_1 h2, h3{
     margin-top: 100px;
+    color: #3C1218;
 }
 /*********************/
 /********FOOTER********/
@@ -179,10 +224,16 @@ footer {
     background-color: #FCDFDB;
     width: 75%;
     margin: auto;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     padding-bottom: 50px;
     padding-top: 50px;
     margin-bottom: 10%;
+}
+.menu i {
+    background: linear-gradient(90deg,#f05461 40%, #f6926b 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
 }
 titre {
     margin-top: 50px;
@@ -206,8 +257,16 @@ titre {
 }
 menu, h2, h3, p, i {
     text-align: center;
+    color: #3C1218;
+    font-family: dalgona;
 }
-
+menu, li {
+    font-family: CutiePatootieSkinny;
+    font-size: 1.5em;
+}
+.menu h2 {
+    font-size: 3em;
+}
 /*********************/
 /********MENU2********/
 /*********************/
@@ -223,8 +282,24 @@ menu, h2, h3, p, i {
     padding-bottom: 50px;
     padding-top: 50px;
     margin-bottom: 10%;
+    background: linear-gradient(180deg,#d98330 0%, #8f5aff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
 }
-
+.menu_2 h3, h2 {
+    font-family: Alleyster;
+}
+.menu_2 li {
+    font-family: serif;
+}
+.menu_2 h2 {
+    font-size: 3em;
+    background: -webkit-linear-gradient(20deg,#d98330 30%, #8f5aff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
 /*********************/
 /********MENU3********/
 /*********************/
@@ -240,6 +315,16 @@ menu, h2, h3, p, i {
     padding-bottom: 50px;
     padding-top: 50px;
     margin-bottom: 10%;
+}
+.menu_3 h3, h2 {
+    font-family: cookie;
+}
+.menu_3 h2 {
+    font-size: 3em;
+    background: linear-gradient(90deg,#2549e2 40%, #2495fb 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
 }
 
 /*********************/
@@ -257,4 +342,54 @@ menu, h2, h3, p, i {
     padding-bottom: 50px;
     padding-top: 50px;
     margin-bottom: 10%;
+    
 }
+.menu_4 h3, h2 {
+    font-family: MountainBridgeRegular;
+}
+.menu_4 h2 {
+    font-size: 3em;
+    background: linear-gradient(90deg,#43973d 40%, #e2fcc3 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
+
+/*********************/
+/********ANIM********/
+/*********************/
+@keyframes headshake {
+    40% {
+        transform: translateX(3%);
+    }
+    75% {
+        transform: translateX(3%);
+    }
+}
+
+#circle {
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+.soon {
+    display: flex;
+    margin-bottom: 250px;
+    vertical-align: top;
+    justify-content: center;
+}
+
+.mention:hover{
+    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+    animation-iteration-count: 3;
+}
+.contact:hover{
+    animation: headshake 100ms cubic-bezier() 2;
+    animation-iteration-count: 3;
+}
+ 
