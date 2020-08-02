@@ -384,26 +384,35 @@ menu, li {
 }    
 @keyframes slide {
     from {
-        margin-left: 20%;
+        margin-left: 0%;
     }
     to {
-        margin-right: 0%;
+        margin-left: 20%;
     }
 }
 @keyframes slide_2 {
     from {
-        margin-left: 10px;
+        margin-left: 0px;
     }
     to {
-        margin-right: 0%;
+        margin-left: 5%;
     }
 }
 @keyframes slide_3 {
     from {
-        margin-left: 10px;
+        margin-left: 0px;
     }
     to {
-        margin-right: 0%;
+        margin-left: 5%;
+    }
+}
+@keyframes line {
+    0% {
+        border-bottom: 2px solid white;
+    }
+    100% {
+        border-bottom: 2px solid white;
+        border-width: 10px;
     }
 }
 .circle_1, .circle_2, .circle_3 {
@@ -427,21 +436,52 @@ menu, li {
 .contact:hover{
     animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;   
 }
-.circle_1 {
-        animation-duration: 950ms;
+section:hover .circle_1 {
+        animation-duration: 1s;
         animation-name: slide;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 2;
         animation-direction: alternate;
 }
-.circle_2 {
-    animation-duration: 950ms;
+section:hover .circle_2 {
+    /*transition-delay: 1s;*/
+    animation-duration: 1s;
     animation-name: slide_2;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
     animation-direction: alternate;
 }
-.circle_3 {
-    animation-duration: 950ms;
+section:hover .circle_3 {
+    /*transition-delay: 1s;*/
+    animation-duration: 1s;
     animation-name: slide_3;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
     animation-direction: alternate;
 }
+/*.title:hover {
+    animation: line 5s infinite;
+    animation-timing-function: linear;
+}
+.title:hover{
+    animation: border-bottom-animation 4s;
+}*/
+
+.title {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .title::after {
+    content: "";
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: coral;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: .3s ease-in-out;
+  }
+  
+  .title:hover::after {
+    transform: scaleX(1);
+  }
