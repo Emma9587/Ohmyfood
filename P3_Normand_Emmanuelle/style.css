@@ -789,6 +789,7 @@ section:hover .circle_3 {
 /****************************/
 
 @media (min-width: 640px) and (max-width: 992px) {
+    
     body {
         height: 900px;
     }
@@ -798,21 +799,21 @@ section:hover .circle_3 {
 section:hover .circle_1 {
         animation-duration: 1s;
         animation-name: slide;
-        animation-iteration-count: 2;
+        animation-iteration-count: infinite;
         animation-direction: alternate;
 }
 section:hover .circle_2 {
     transition-delay: 5ms;
     animation-duration: 1s;
     animation-name: slide_2;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 section:hover .circle_3 {
     transition-delay: 5ms;
     animation-duration: 1s;
     animation-name: slide_3;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
     footer{
@@ -821,18 +822,22 @@ section:hover .circle_3 {
     .mention{
        margin-right: auto;
        margin-left: 10px;
-       margin-top: 30;
-       padding-top: 0;
+       padding-top: 30px;
+
        
     }
     .contact{
         margin-right: 10px;
-        margin-top: 30;
-        padding-top: 0;
+        padding-top: 30px;
     }
     .nav__link_1, .nav__link_2, .nav__link_3, .nav__link_4 {
-        height: 600px;
-    }
+        height: 550px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+     }
     .menu, .menu_3, .menu_4{
         margin-bottom: 20%;
         width: 900px;
@@ -841,6 +846,37 @@ section:hover .circle_3 {
     .menu_2 {
         margin-bottom: 20%;
         width: 900px;
+    }
+   
+    .point {
+        padding-left: 500px;
+    }
+    @keyframes slide {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 50%;
+        }
+    }
+    @keyframes slide_2 {
+        from {
+            margin-left: 0px;
+        }
+        to {
+            margin-left: 5%;
+        }
+    }
+    @keyframes slide_3 {
+        from {
+            margin-left: 0px;
+        }
+        to {
+            margin-left: 5%;
+        }
+    }
+    .btn {
+
     }
 }
 
