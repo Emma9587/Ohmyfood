@@ -29,14 +29,12 @@
     font-weight: normal;
     font-style: normal;
   }
-  
-  
+ 
 body
 {
     font-family: arial, georgia;
     margin: 0;
     height: 100%;
-
 }
 ul
 {
@@ -70,7 +68,6 @@ header {
     box-shadow: grey 0px 0px 20px;
     font-family: dalgona;
 }
-
 .nav__link_2 {
     background-color:#FFF5FE;
     width: 40%;
@@ -80,13 +77,13 @@ header {
     font-family: Alleyster;
 }
 .nav__link_2 h2 {
-    background: -webkit-linear-gradient(20deg,#d98330 40%, #8f5aff 60%);
+    background: linear-gradient(20deg,#d98330 40%, #8f5aff 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: normal;
 }
 .nav__link_2 h3 {
-    background: -webkit-linear-gradient(20deg,#d98330 40%, #8f5aff 60%);
+    background: linear-gradient(20deg,#d98330 40%, #8f5aff 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: normal;
@@ -144,7 +141,6 @@ header {
     margin-top: 5%;
     margin-bottom: 15%;
 }
-
 button {
     background-color: #579C87;
     display: block;
@@ -177,6 +173,7 @@ button {
     margin-top: 100px;
     color: #3C1218;
 }
+
 /*********************/
 /********FOOTER********/
 /*********************/
@@ -201,7 +198,6 @@ footer {
     width: 500px;
     padding-left: 800px;
     margin-top: 55px;
-
 }
 .mention {
     color: #FCCA46;
@@ -323,9 +319,6 @@ menu, li {
     padding-bottom: 50px;
     padding-top: 50px;
     margin-bottom: 10%;
-    /*background: linear-gradient(180deg,#d98330 30%, #8f5aff 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
     line-height: normal;
 }
 .menu_2 h3, h2 {
@@ -336,7 +329,7 @@ menu, li {
 }
 .menu_2 h2 {
     font-size: 3em;
-    background: -webkit-linear-gradient(20deg,#d98330 30%, #8f5aff 70%);
+    background: linear-gradient(20deg,#d98330 30%, #8f5aff 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: normal;
@@ -455,8 +448,7 @@ menu, li {
     font-size: 1.2em;
     padding-bottom: 50px;
     padding-top: 50px;
-    margin-bottom: 10%;
-    
+    margin-bottom: 10%;  
 }
 .menu_4 h3, h2 {
     font-family: MountainBridgeRegular;
@@ -510,7 +502,6 @@ menu, li {
 /**********************/
 
 P {
- 
     text-align: left;
     margin-left: 20px;
     width: 800px;
@@ -518,10 +509,10 @@ P {
 .mentions_legales {
     text-align: center;
 }
-h2, .mentions_legales {
+.mentions_legales {
     font-family: Arial, Helvetica, sans-serif;
-
 }
+
 /*********************/
 /********ANIM********/
 /*********************/
@@ -568,7 +559,6 @@ h2, .mentions_legales {
         margin-left: 5%;
     }
 }
-
 .soon {
     display: flex;
     margin-bottom: 250px;
@@ -744,14 +734,10 @@ section:hover .circle_3 {
 .nav__link_1 #zoom_1 {
   max-width: 100%;
   height:auto;
- -moz-transition: all 0.5s;
- -webkit-transition: all 0.5s;
   transition: all 0.5s;
   animation-duration: 5s;
 }
 .nav__link_1:hover #zoom_1 {
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
   transform: scale(2);
   opacity: 0;
 }
@@ -762,14 +748,10 @@ section:hover .circle_3 {
 .nav__link_2 #zoom_2 {
   max-width: 100%;
   height:auto;
- -moz-transition: all 0.5s;
- -webkit-transition: all 0.5s;
   transition: all 0.5s;
   animation-duration: 5s;
 }
 .nav__link_2:hover #zoom_2 {
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
   transform: scale(2);
   opacity: 0;
 }
@@ -780,14 +762,10 @@ section:hover .circle_3 {
 .nav__link_3 #zoom_3 {
   max-width: 100%;
   height:auto;
- -moz-transition: all 0.5s;
- -webkit-transition: all 0.5s;
   transition: all 0.5s;
   animation-duration: 5s;
 }
 .nav__link_3:hover #zoom_3 {
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
   transform: scale(2);
   opacity: 0;
 }
@@ -798,14 +776,10 @@ section:hover .circle_3 {
 .nav__link_4 #zoom_4 {
   max-width: 100%;
   height:auto;
- -moz-transition: all 0.5s;
- -webkit-transition: all 0.5s;
   transition: all 0.5s;
   animation-duration: 5s;
 }
 .nav__link_4:hover #zoom_4 {
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
   transform: scale(2);
   opacity: 0;
 }
