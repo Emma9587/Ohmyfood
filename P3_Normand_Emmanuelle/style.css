@@ -867,9 +867,9 @@ section:hover .circle_3 {
     .line_l, .line_r, #color_1 .line_l_1, #color_1 .line_r_1, #color_2 .line_l_2, #color_2 .line_r_2, #color_3 .line_l_3, #color_3 .line_r_3, .line_l_color_1, .line_r_color_1, .line_l_color_2, .line_r_color_2, .line_l_color_3, .line_r_color_3 {
         display: none;
     }
-    .nav__link_4 {
+    /*.nav__link_4 {
         margin-bottom: 10%;
-    }
+    }*/
     .menu h3 {
         width: 100%;
         justify-content: center;
@@ -926,7 +926,6 @@ section:hover .circle_3 {
     header {
         height: 20%;
     }
-    
     body
     {
         display: flex;
@@ -1011,5 +1010,7 @@ section:hover .circle_3 {
     .mention_legales, .contact{
         margin: 0;
     }
-
+    section {
+        margin-bottom: 20%;
+    }
 }
