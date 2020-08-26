@@ -45,7 +45,7 @@ a {
 }
 header {
     width: 100%;
-    height: 20%;
+    height: 200px;
     background-color: #579C87;
 }
 .logo {
@@ -141,24 +141,24 @@ header {
     display: inline-block;
     flex-direction: row;
     margin-top: 5%;
-    /*margin-bottom: 15%;*/
 }
 button {
     background-color: #579C87;
     display: block;
     position: absolute;
+    border: none;
 }
 .nav h3{
     font-family: CutiePatootieSkinny;
 }
 #fa{
-    padding-top: 60px;
+   padding-top: 60px;
    display: flex;
    justify-content: center;
    background: linear-gradient(90deg,#f05461 40%, #f6926b 60%);
    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: normal;
+   -webkit-text-fill-color: transparent;
+   line-height: normal;
 }
 .nav, h2, h3 {
     font-size: 1.6em;
@@ -181,7 +181,7 @@ button {
 
 footer {
     width: 100%;
-    height: 15%;
+    height: 150px;
     background-color: #579C87;
     position: fixed;
     bottom: 0px;
@@ -193,8 +193,8 @@ footer {
     border: none;
     color: #FCCA46;
     font-size: 2.5em;
-    margin-top: 100px;
-    
+    margin-top: 100px; 
+    outline: none;  
 }
 .point {
     display: flex;
@@ -207,15 +207,15 @@ footer {
     font-size: 3em;
     font-family: arial, georgia;
     text-decoration: none;
-    margin-right: 60%;
-    padding-top: 50px;
+    margin-top: 40px;
+    margin-right: 50%;
 }
 .contact {
     color: #FCCA46;
     font-size: 3em;
     font-family: arial, georgia;
     text-decoration: none;
-    padding-top: 50px;
+    margin-top: 40px;
 }
 
 
@@ -296,19 +296,19 @@ menu, li {
     color: #d98330;
  }
  #color_secondary_1{
-     color:#d98330;
+    color:#d98330;
  } 
  #color_2{
     color: #A56799 ;
  }
  #color_secondary_2{
-     color: #A56799;
+    color: #A56799;
  }
  #color_3{
-     color: #8f5aff;
+    color: #8f5aff;
  }
  #color_secondary_3{
-     color: #8f5aff;
+    color: #8f5aff;
  }
 .menu_2 {
     display: flex;
@@ -591,10 +591,10 @@ P {
     display: flex;
 }
 section:hover .circle_1 {
-        animation-duration: 1s;
-        animation-name: slide;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+    animation-duration: 1s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 section:hover .circle_2 {
     transition-delay: 1s;
@@ -800,46 +800,40 @@ section:hover .circle_3 {
 
 @media (min-width: 640px) and (max-width: 992px) {
     
-    body {
+   body {
         height: 900px;
     }
     html{
         width: max-content;
     }
     .point {
-      padding-left: 650px;
+        padding-left: 650px;
     }
-section:hover .circle_1 {
+    header {
+        height: 200px;
+    }
+    section:hover .circle_1 {
         animation-duration: 1s;
         animation-name: slide;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-}
-section:hover .circle_2 {
-    transition-delay: 5ms;
-    animation-duration: 1s;
-    animation-name: slide_2;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-section:hover .circle_3 {
-    transition-delay: 5ms;
-    animation-duration: 1s;
-    animation-name: slide_3;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+    }
+    section:hover .circle_2 {
+        transition-delay: 5ms;
+        animation-duration: 1s;
+        animation-name: slide_2;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    section:hover .circle_3 {
+        transition-delay: 5ms;
+        animation-duration: 1s;
+        animation-name: slide_3;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
     footer{
-       height: 10%;
-    }
-    .mention{
-       margin-right: auto;
-       margin-left: 10px;
-       padding-top: 30px;   
-    }
-    .contact{
-        margin-right: 10px;
-        padding-top: 30px;
+       height: 100px;
     }
     .nav__link_1, .nav__link_2, .nav__link_3, .nav__link_4 {
         height: 550px;
@@ -867,27 +861,29 @@ section:hover .circle_3 {
     .line_l, .line_r, #color_1 .line_l_1, #color_1 .line_r_1, #color_2 .line_l_2, #color_2 .line_r_2, #color_3 .line_l_3, #color_3 .line_r_3, .line_l_color_1, .line_r_color_1, .line_l_color_2, .line_r_color_2, .line_l_color_3, .line_r_color_3 {
         display: none;
     }
-    /*.nav__link_4 {
-        margin-bottom: 10%;
-    }*/
     .menu h3 {
-        width: 100%;
+        
         justify-content: center;
     }
     .menu_2 h3 {
-        width: 100%;
+       
         justify-content: center;
         font-size: 2em;
     }
     .menu_3 h3 {
-        width: 100%;
+        
         justify-content: center;
         font-size: 2em;
     }
     .menu_4 h3 {
-        width: 100%;
         justify-content: center;
         font-size: 2em;
+    }
+    .menu_4 .row {
+        display: block;
+    }
+    .mention, .contact {
+        margin-top: 20px;
     }
     @keyframes slide {
         from {
@@ -924,16 +920,13 @@ section:hover .circle_3 {
         width: max-content;
     }
     header {
-        height: 20%;
+        height: 200px;
     }
     body
     {
         display: flex;
         flex-direction: column;
         margin-right: auto;
-    }
-    .soon {
-        margin-bottom: 30%;
     }
     .nav__link_1, .nav__link_2, .nav__link_3, .nav__link_4 {
         height: 800px;
@@ -945,72 +938,72 @@ section:hover .circle_3 {
         font-size: 1.7em;
      }
     footer {
-         height: 10%;
+         height: 150px;
      }
     .nav__link_4 {
          margin-bottom: 50px;
      }
-    .mention {
-        margin: 0;
-        margin-right: 350px;
-        margin-top: 40px;
-    }
-    .contact {
-        margin-top: 40px;
-    }
     .line_l_deg_1, .line_r_deg_1, .line_l_deg_2, .line_r_deg_2, .line_l_deg_3, .line_r_deg_3 {
         background: none;
     }
     .line_l, .line_r, #color_1 .line_l_1, #color_1 .line_r_1, #color_2 .line_l_2, #color_2 .line_r_2, #color_3 .line_l_3, #color_3 .line_r_3, .line_l_color_1, .line_r_color_1, .line_l_color_2, .line_r_color_2, .line_l_color_3, .line_r_color_3 {
         display: none;
     }  
-   
     .menu h3 {
-        width: 100%;
         justify-content: center;
         font-size: 2em;
+        line-height: 30px;
     }
     .menu_2 h3 {
-        width: 100%;
         justify-content: center;
         font-size: 2em;
     }
     .menu_3 h3 {
-        width: 100%;
         justify-content: center;
         font-size: 2em;
     }
     .menu_4 h3 {
-        width: 100%;
         justify-content: center;
         font-size: 2em;
     }
-
    .menu, .menu_2, .menu_3, .menu_4{
        min-width: 100%;
        font-size: 1.7em;
        line-height: 60px;
+       padding-top: 0;
    }
    .prix {
        line-height: 60px;
    }
-   .mention_legales, p {
-       font-size: 1.4em;
-       padding-right: 15px;
-       padding-bottom: 100px;
-    }
-    .mention_legales .contact{
-       font-size: 2em;
-       padding-bottom: 50px; 
+   .menu span, h4 {
+          display: none;
+   }
+   .menu i {
+       display: none;
+   }
+   .menu ul {
        margin: 0;
+   }
+   .menu_4 .prix {
+       padding: 0;
+   }
+   .menu_4 .plats {
+       width: 75%;
+   }
+   .menu_4 {
+       font-size: 2em;
+   }
+    .mention, .contact {
+        margin-top: 40px;
     }
-    .mention_legales, .mention{
-        margin: 0;
+    .mention_legales p {
+        font-size: 2em;
+        padding-bottom: 30px;
     }
-    .mention_legales, .contact{
-        margin: 0;
+    .mentions_legales {
+        font-size: 3em;
     }
-    section {
-        margin-bottom: 20%;
+    .mention_legales {
+        padding-bottom: 20%;
     }
 }
