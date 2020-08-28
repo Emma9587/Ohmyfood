@@ -883,7 +883,10 @@ section:hover .circle_3 {
         display: block;
     }
     .mention, .contact {
+        margin-left: 15px;
+        margin-right: 40px;
         margin-top: 20px;
+    }
     }
     @keyframes slide {
         from {
@@ -949,6 +952,9 @@ section:hover .circle_3 {
     .line_l, .line_r, #color_1 .line_l_1, #color_1 .line_r_1, #color_2 .line_l_2, #color_2 .line_r_2, #color_3 .line_l_3, #color_3 .line_r_3, .line_l_color_1, .line_r_color_1, .line_l_color_2, .line_r_color_2, .line_l_color_3, .line_r_color_3 {
         display: none;
     }  
+    .line_r_deg_1, .line_l_deg_1, .line_r_deg_2, .line_l_deg_2, .line_r_deg_3, .line_l_deg_3  {
+        display: none;
+    }
     .menu h3 {
         justify-content: center;
         font-size: 2em;
@@ -971,30 +977,74 @@ section:hover .circle_3 {
        font-size: 1.7em;
        line-height: 60px;
        padding-top: 0;
-   }
-   .prix {
+    }
+    .prix {
        line-height: 60px;
-   }
-   .menu span, h4 {
-          display: none;
-   }
+    }
+    .menu span, h4 {
+        display: none;
+    }
    .menu i {
        display: none;
-   }
-   .menu ul {
+    }
+    .menu ul {
        margin: 0;
-   }
-   .menu_4 .prix {
+    }
+    .menu_4 .prix {
        padding: 0;
-   }
-   .menu_4 .plats {
-       width: 75%;
-   }
-   .menu_4 {
+    }
+    .menu_4 .plats {
+       width: 85%;
+       line-height: 60px;
+    }
+    .menu_4 {
        font-size: 2em;
-   }
+    }
+    #papilles {
+       line-height: 70px;
+    } 
+    #prix_2 {
+       margin-top: 80px;
+    }
+    #prix_3 {
+    margin-top: 20px;
+    }
+    #menu3 {
+        line-height: 70px;
+    }
+    #prix_55{
+        margin-top: 0px;
+    }
+    #prix_89{
+        margin-top: 10px;
+    }
+    #prix_56 {
+        margin-top: 75px;
+    }
+    #prix_70{
+        margin-top: 0px;
+    }
+    #prix_85{
+        margin-top: 52px;
+    }
+    #prix_125{
+        margin-top: 60px;
+    }
+    #art {
+        line-height: 70px;
+    }
     .mention, .contact {
-        margin-top: 40px;
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+    #prix_55 {
+        margin-top: 0;
+    }
+    #prix_65 {
+        margin-top: 10px;
+    }
+    #prix_60 {
+        margin-top: 75px;
     }
     .mention_legales p {
         font-size: 2em;
